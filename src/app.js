@@ -4,13 +4,13 @@ const Pageheader = require('./page-header.js')
 const styles = {
 	backgroundColor: 'black',
 	height: '55px',
-	color: 'yellow',
+	color: 'green',
 	width: '100%',
 	margin: '0'
 }
 
 const Homepage = () => (
-	<div style= {styles}>testing</div>
+	<div style= {styles}>tests</div>
 )
 
 ReactDOM.render(<Homepage/>, document.getElementById('app'))
