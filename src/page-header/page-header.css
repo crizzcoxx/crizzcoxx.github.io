@@ -1,0 +1,30 @@
+body {
+  width: 100%;
+  margin: 0px;
+  font-size: 100%;
+  position: absolute;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 23px;
+}
+
+.bheader {
+  background-color: #009587;
+  border-bottom: 1px solid #599FBB;
+  height: 65px;
+  color: #FFFFFF;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  box-shadow: 0 5px 8px -1px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  font-size: 130%;
+  overflow: hidden;
+}
+
+img {
+  height: 40px;
+  width: auto;
+  margin: 12px 0 1% 80px;
+}
