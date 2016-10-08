@@ -1,14 +1,17 @@
-const React = require('react');
-const ReactDOM = require('react-dom');
-const Pageheader = require('./page-header/page-header.js');
-const styles = require('./page-header/page-header.css');
-const Navlogo = require('./nav/nav.js')
+const React = require('react')
+const ReactDOM = require('react-dom')
+const Home = require('./Header/home.js')
+const Portfolio = require('./Header/portfolio.js')
+const Contact = require('./Header/contact.js')
+const ReactRouter = require('react-router')
+const { Router, Route, hashHistory } = ReactRouter
 
-const Homepage = () => (
-	<div className={ styles.bheader }>
-	<img src= 'http://www.clipartkid.com/images/808/big-image-png-AeddOq-clipart.png' />
-    <p className="text">Global Selectors</p>
-  </div>
+const App = () => (
+	<Router history= {hashHistory}>
+    <Route path ='/' component={Home} />
+    <Route path='portfolio.js' component={Portfolio} />
+    <Route path='contact.js' component={Contact} />
+  </Router>
 )
 
-ReactDOM.render(<Homepage/>, document.getElementById('app'))
+ReactDOM.render(<App/>, document.getElementById('app'))
