@@ -8,7 +8,6 @@
   font-size: 20px;
   position: absolute;
   font-family: "Segoe UI", Arial, sans-serif;
-  font-size: 15px;
   line-height: 23px;
 }
 
@@ -20,39 +19,83 @@
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 9999;
   box-shadow: 0 5px 8px -1px rgba(0, 0, 0, 0.2);
   text-transform: uppercase;
   font-size: 130%;
-  overflow: hidden;
 }
 
 img {
   height: 40px;
   width: auto;
-  margin: 12px 0 45px 80px;
+  margin: 12px 0 9px 80px;
 }
 
 .navul {
-  display: inline-block;
   list-style-type: none;
   font-weight: 500;
   margin-right: 10%;
-  margin-top: 2px;
-  border-left: 1px solid #5C9DB7;
-  border-right: 1px solid #5C9DB7;
-  padding: 18px 0;
+  margin-top: -43px;
   float: right;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+#portfolio-link {
+    border-left: 1px solid #5C9DB7;
+    padding-left: 20px;
 }
 
 .navul a {
   color: #FAFAFA;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 3px 20px 16px 20px;
+  padding: 14px 18px 13px 18px;
+  border-left: 1px solid #5C9DB7;
+  border-right: 1px solid #5C9DB7;
+}
+
+a#contact {
+    border-left: 1px solid #5C9DB7;
 }
 
 .navul a:active, .navul a:focus, .navul a:hover {
   background-color: #E7E7E7;
-  padding: 3px 20px 16px 20px;
+  font-weight: 600;
+  color: #888888;
+}
+
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #009587;
+  background-image: url(
+    http://sandvoxdesigns.blueballdesign.com/flexor/_Media/flexor_albumimg_06_hr-2.jpeg);
+  background-size: cover;
+  perspective-origin-x: 100%;
+}
+
+.parallax__group {
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
+  margin-top: 40px;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin-x: 100%;
+}
+#parallax__layer__base {
+  transform: translateZ(0);
+  margin-top: 300px;
+}
+#parallax__layer__back {
+  transform: translateZ(-3px) scale(4);
+  margin-top: 153px;
 }

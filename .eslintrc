@@ -1,0 +1,37 @@
+{
+    "env": {
+        "browser": true,
+        "node": true
+    },
+
+    "globals": {
+        "React": true
+    },
+
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+
+    "parser": [
+        "babel-eslint"
+    ],
+
+    "plugins": [
+        "react"
+    ],
+
+    "syntax_map": {
+    "JavaScript (Babel)": "javascript",
+    },
+
+    "extends": ["eslint:recommended", "plugin:react/recommended"
+    ],
+    
+    "rules": {
+        "react/jsx-uses-react": "error",
+        "react/jsx-uses-vars": "error",
+        "quotes": [1, "single"]
+    }
+}
